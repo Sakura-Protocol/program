@@ -1,4 +1,11 @@
 use anchor_lang::prelude::*;
+pub mod instructions;
+pub mod state;
+pub mod errors;
+
+pub use instruction::*;
+pub use state::*;
+pub use errors::ErrorCode;
 
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
@@ -10,8 +17,10 @@ pub mod solstore {
         Ok(())
     }
 
+    // Done
     // Create an Admin Account that's going to store the Admin Config Info + the funds gets comming here
 
+    
     // Allow Admin Account to create Coupons and Products
 
     // Allow Admin to create Loyalty Points
